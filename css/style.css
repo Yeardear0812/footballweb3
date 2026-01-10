@@ -25,9 +25,10 @@ header{
 
 .flex-between {
     display: flex;
-    justify-self: space-between;
+    justify-content: space-between;
 }
 .items_center{
+    
     align-items: center;
 }
 
@@ -41,14 +42,13 @@ header{
 }
 
 .navigation {
+    padding: 0 56px;
     width: 100%;
     background-color: rgba(172, 172, 170, 0.3);
     max-width: 430px;
     border-radius: 20px;
 }
-
 .menu a{
-    
     font-size: 14px;
     padding: 15px 0;
     line-height: 2.1em;
@@ -58,10 +58,17 @@ header{
 }
 .contacts{
     font-size: 16px;
-    line-height: 3.1em;
+    
 }
-.main_text{
-    max-width: 692px;
+.main{
+    position: relative;
+    padding: 130px 0;
+}
+.contacts a{
+    gap: 9px;
+}
+.main_text h1{
+    min-width: 692px;
 }
 .slogon{
     font-size: 30px;
@@ -82,10 +89,19 @@ header{
 .rating_container{
     font-size: 20px;
     font-weight: bold;
+    padding-top: 30px;
 
+}
+.ball_container{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
 }
 .botom_container {
     background-color: #f4d633;
+}
+.botom{
+    padding: 20px 100px;
 }
 .graphick p{
     font-size: 16px;
