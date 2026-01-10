@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
 }
+html{
+    font-size: 0.8px;
+}
 h1, a, p {
     color: #fff;
 }
 h1{
+    max-width: 692px;
     font-size: 48px;
     text-transform: uppercase;
     font-weight: 800;
@@ -31,7 +35,12 @@ header{
     
     align-items: center;
 }
-
+.main_text igi{
+    font-size: 16px;
+    color: #ffffff;
+    font-style: italic;
+    font-family: "Arial";
+}
 
 .wrapper{
     max-width: 1000px;
@@ -58,6 +67,7 @@ header{
 }
 .contacts{
     font-size: 16px;
+    z-index: 5;
     
 }
 .main{
@@ -67,8 +77,10 @@ header{
 .contacts a{
     gap: 9px;
 }
-.main_text h1{
-    min-width: 692px;
+.section{
+    position: relative;
+    min-width: 70vw;
+    z-index: 2;
 }
 .slogon{
     font-size: 30px;
@@ -98,6 +110,7 @@ header{
     bottom: -10px;
 }
 .botom_container {
+    flex-wrap: wrap;
     background-color: #f4d633;
 }
 .botom{
