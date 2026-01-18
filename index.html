@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="black1" id="black1"></div>
     <div class="main_container">
         <div class="wrapper">
             <header class="head flex-between items_center">
@@ -19,28 +20,29 @@
                     </a>
                 </div>
                 <nav class="navigation">
-                    <ul class="menu flex-between items_center">
+                    <ul class="menu  items_center" id="mainnav">
+                        <li class="close" id="cancel"><a href=""><img src="img/close.svg" alt=""></a></li>
                         <li><a href="#">Про нас</a></li>
                         <li><a href="#">Контакти</a></li>
                         <li><a href="#">Івенти</a></li>
                         <li><a href="#">Групи</a></li>
+                        <div class="contacts1 items_center ">
+                            <a href="" class="items_center ">
+                                <picture>
+                                    <source srcset="img/phonesvg.webp" type="image/webp">
+                                    <img src="img/phonesvg.svg" alt="">
+        
+                                </picture>
+                                +38 050 505 50 55
+                            </a>
+                        </div>
                     </ul>
-                    <div class="contacts items_center ">
-                        <a href="" class="items_center flex-between">
-                            <picture>
-                                <source srcset="img/phonesvg.webp" type="image/webp">
-                                <img src="img/phonesvg.svg" alt="">
-    
-                            </picture>
-                            +38 050 505 50 55
-                        </a>
-                    </div>
-                    <div class="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
                 </nav>
+                <div class="burger" id="burger">
+                    <picture>
+                        <img src="img/BURGER.svg" alt="">
+                    </picture>
+                </div>
                 <div class="contacts items_center ">
                     <a href="" class="items_center flex-between">
                         <picture>
@@ -118,6 +120,7 @@
             </div>
         </div>
     </footer>
+    <script src="java/script.js"></script>
 </body>
 
 </html>
