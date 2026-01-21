@@ -46,13 +46,17 @@ header{
     max-width: 1000rem;
     margin: 0 auto;
 }
+.head{
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
 .main_container {
     background-image: radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
 }
 
 .navigation {
     padding: 0 56rem;
-    width: 100%;
     background-color: rgba(172, 172, 170, 0.3);
     border-radius: 20rem;
     z-index: 10;
@@ -68,22 +72,27 @@ header{
     backdrop-filter: blur(5px);
     z-index: 6;
 }
-.menu{
-    display: none;
+.menu {
+    display: block;
     position: fixed;
     top: 0;
     left: -100%;
-    width: 80vw;
-    height: 100vh;
-    background-color:  rgba(3, 8, 72, 1)    ;
-    padding: 30px 0;
+    width: 80%;
+    height: 100%;
+    background-color: #030848;
+    padding: 50px 20px;
+    flex-direction: column;
+    z-index: 100;
+    transition: left 0.3s ease;
+    gap: 13px;
 }
-.close{
+.close {
     position: absolute;
     top: 0;
     right: 0;
 }
 .burger{
+    z-index: 7;
     display: block;
 }
 .menu li{
@@ -117,6 +126,9 @@ header{
     display: none;
     gap: 9rem;
 }
+.logo{
+    z-index: 10;
+}
 .section{
     display: flex;
     justify-content: center;
@@ -124,6 +136,7 @@ header{
     position: relative;
     width: 100%;
     z-index: 2;
+    padding: 0 15px;
 }
 .slogon{
     font-size: 30rem;
@@ -148,19 +161,26 @@ header{
 
 }
 .ball_container{
-    display: none;
+    display: block;
     position: absolute;
     right: 0;
     bottom: -10rem;
+
+
+}
+.ball_container img{
+    filter: blur(5px) brightness(0.5);
 }
 .botom_container {
 
     background-color: #f4d633;
 }
-.botom{
+.botom {
+    gap: 5px;
     display: flex;
     flex-wrap: wrap;
     padding: 20rem 100rem;
+    justify-content: center;
 }
 .graphick p{
     font-size: 16rem;
@@ -177,28 +197,78 @@ header{
         font-size: 20px;
     }
 }
+@media screen and (min-width: 510px){
+    .botom{
+        justify-content: space-between;
+    }
+ 
+}
 @media screen and (min-width: 650px) {
-
-
     .menu {
-        display: flex ;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
         position: static;
         width: auto;
         height: auto;
-        padding: 0;
-        gap: 20rem;
-        align-items: center;
-    }
+        flex-direction: row;
 
-    .menu li {
         padding: 0;
+        left:0;
+    }
+    .contacts a {
+        display: flex; 
+        gap: 9rem;    
+        align-items: center; 
+    }
+    .burger {
+        display: none;
+    }
+    .close{
+        display: none;
+    }
+    .contacts1{
+        display:none;
+        overflow: hidden;
     }
 }
 @media screen and (min-width: 1000px) {
-    .ball_container{
-        display: block;
-    }
     .section{
+        padding: 0;
         display: block;
     }
+}
+@media screen and (min-width: 1300px) {
+    .ball_container img{
+        filter: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+
+    html{
+        font-size: 1px;
+        
+    }
+    
+}
+@media screen and (min-width: 1440px) {
+    html{
+        font-size: 1.1px;
+
+    }
+    
+}
+@media screen and (min-width: 1920px) {
+    html{
+        font-size: 1.3px;
+
+    }
+    
+}
+@media screen and (min-width: 2200px) {
+    html{
+        font-size: 1.5px;
+
+    }
+    
 }
